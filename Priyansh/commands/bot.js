@@ -12,7 +12,7 @@ module.exports.config = {
 module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
   var { threadID, messageID, reason } = event;
   const moment = require("moment-timezone");
-  const time = moment.tz("Asia/Kolkata").format("HH:MM:ss L");
+  const time = moment.tz("Asia/rajshahi").format("HH:MM:ss L");
   var idgr = `${event.threadID}`;
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
@@ -21,7 +21,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
     if ((event.body.toLowerCase() == "chutiya bot") || (event.body.toLowerCase() == "chutiye bot") || (event.body.toLowerCase() == "chumtiya bot") || (event.body.toLowerCase() == "chumtiye bot")) {
-     return api.sendMessage("Hmm... Tu Chutiya PhLe Ungli Kyun Ki Chomu 😾", threadID);
+     return api.sendMessage("Hmm... Tui Chutiya, tor nani, nana chutiya 😾", threadID);
    };
 
    if ((event.body.toLowerCase() == "🤮") || (event.body.toLowerCase() == "🤮")) {
@@ -79,7 +79,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "chup") || (event.body.toLowerCase() == "stop") || (event.body.toLowerCase() == "chup ho ja") || (event.body.toLowerCase() == "chup kar")) {
-     return api.sendMessage("Nhi rahunga. 😼 Mujhe Bolna H. Tumhe Koi Haq nhi Mujhe Chup Karane ka. Mera Zuban. M Bolunga", threadID);
+     return api.sendMessage("Nhi rahunga. 😼 Mujhe Bolna H. Tumhe Koi Haq nhi Mujhe Chup Karane ka. Mera Zuban. Me Bolunga", threadID);
    };
 
    if ((event.body.toLowerCase() == "bts") || (event.body.toLowerCase() == "btc")) {
@@ -91,7 +91,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "gand") || (event.body.toLowerCase() == "gandu") || (event.body.toLowerCase() == "lund") || (event.body.toLowerCase() == "land")) {
-     return api.sendMessage("Gand m jyada khujli h toh banana 🍌 under le le. :))))", threadID);
+     return api.sendMessage("Gand m jyada khujli ho toh banana 🍌 under le le. :))))", threadID);
    };
 
    if ((event.body.toLowerCase() == "chumma de") || (event.body.toLowerCase() == "kiss me")) {
